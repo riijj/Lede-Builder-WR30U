@@ -1,8 +1,8 @@
-diff --git a/target/linux/mediatek/dts/mt7981b-xiaomi-wr30u-225m-nmbm.dts b/target/linux/mediatek/dts/mt7981b-xiaomi-wr30u-225m-nmbm.dts
+diff --git a/target/linux/mediatek/dts/mt7981b-xiaomi-wr30u-234m-nmbm.dts b/target/linux/mediatek/dts/mt7981b-xiaomi-wr30u-234m-nmbm.dts
 new file mode 100644
-index 000000000..9405654d0
+index 000000000..239b10b56
 --- /dev/null
-+++ b/target/linux/mediatek/dts/mt7981b-xiaomi-wr30u-225m-nmbm.dts
++++ b/target/linux/mediatek/dts/mt7981b-xiaomi-wr30u-234m-nmbm.dts
 @@ -0,0 +1,447 @@
 +// SPDX-License-Identifier: GPL-2.0-or-later OR MIT
 +
@@ -452,17 +452,17 @@ index 000000000..9405654d0
 +	mediatek,mtd-eeprom = <&factory 0x0>;
 +};
 diff --git a/target/linux/mediatek/image/filogic.mk b/target/linux/mediatek/image/filogic.mk
-index 38052de13..eeaf32e40 100644
+index 38052de13..18edd10a4 100644
 --- a/target/linux/mediatek/image/filogic.mk
 +++ b/target/linux/mediatek/image/filogic.mk
 @@ -934,6 +934,20 @@ define Device/xiaomi_mi-router-wr30u
  endef
  TARGET_DEVICES += xiaomi_mi-router-wr30u
  
-+define Device/xiaomi_mi-router-wr30u-225m-nbnm
++define Device/xiaomi_mi-router-wr30u-234m
 +  DEVICE_VENDOR := Xiaomi
 +  DEVICE_MODEL := Mi Router WR30U
-+  DEVICE_DTS := mt7981b-xiaomi-wr30u-225m-nmbm
++  DEVICE_DTS := mt7981b-xiaomi-wr30u-234m-nmbm
 +  DEVICE_DTS_DIR := ../dts
 +  UBINIZE_OPTS := -E 5
 +  BLOCKSIZE := 128k
@@ -471,7 +471,7 @@ index 38052de13..eeaf32e40 100644
 +  DEVICE_PACKAGES := kmod-mt7981-firmware mt7981-wo-firmware
 +  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
 +endef
-+TARGET_DEVICES += xiaomi_mi-router-wr30u-225m-nbnm
++TARGET_DEVICES += xiaomi_mi-router-wr30u-234m
 +
  define Device/xiaomi_redmi-router-ax6000
    DEVICE_VENDOR := Xiaomi
