@@ -13,7 +13,7 @@ index 000000000..239b10b56
 +#include "mt7981.dtsi"
 +
 +/ {
-+	model = "Xiaomi Mi Router WR30U";
++	model = "Xiaomi Mi Router WR30U 234M UBI";
 +	compatible = "xiaomi,mi-router-wr30u", "mediatek,mt7981";
 +
 +	aliases {
@@ -461,7 +461,7 @@ index 38052de13..18edd10a4 100644
  
 +define Device/xiaomi_mi-router-wr30u-234m
 +  DEVICE_VENDOR := Xiaomi
-+  DEVICE_MODEL := Mi Router WR30U
++  DEVICE_MODEL := Mi Router WR30U 234M Ubi
 +  DEVICE_DTS := mt7981b-xiaomi-wr30u-234m-nmbm
 +  DEVICE_DTS_DIR := ../dts
 +  UBINIZE_OPTS := -E 5
